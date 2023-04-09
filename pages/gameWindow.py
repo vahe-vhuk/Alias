@@ -108,6 +108,8 @@ class gameWindow(QtWidgets.QLabel):
 		self.score += (2 * self.part_score) - 5
 		self.part_score = 0
 		
+		if self.score < 0:
+			self.score = 0
 		coin = lang[self.lang]["coin"]
 		self.coin_box.setText(f"{self.score} {coin}")
 
