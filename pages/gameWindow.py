@@ -105,8 +105,9 @@ class gameWindow(QtWidgets.QLabel):
 			self.word_btns[i].setStyleSheet(style.word)
 			self.word_btns_state[f"{i}"] = False
 		
-		self.score += (2 * self.part_score) - 5
-		self.part_score = 0
+		if self.part_score != 0:
+			self.score += (2 * self.part_score) - 5
+			self.part_score = 0
 		
 		if self.score < 0:
 			self.score = 0

@@ -24,19 +24,19 @@ class gameModeForm(QtWidgets.QLabel):
 
 		cancel_btn = lang[self.lang]["cancel"]
 		self.cancel_btn = QtWidgets.QPushButton(cancel_btn, self)
-		self.cancel_btn.setGeometry(10, 10, 50, 30)
+		self.cancel_btn.setGeometry(10, 10, 70, 30)
 		self.cancel_btn.setStyleSheet(style.cancel_btn)
 		self.cancel_btn.clicked.connect(self.deleteLater)
 
 		add_team = lang[self.lang]["addteam"]
 		self.add_team_btn = QPushButton(add_team, self)
-		self.add_team_btn.setGeometry(10, 370, 135, 20)
+		self.add_team_btn.setGeometry(10, 360, 135, 30)
 		self.add_team_btn.setStyleSheet(style.add_team_btn)
 		self.add_team_btn.clicked.connect(self.add_team)
 
 		remove_team = lang[self.lang]["removeteam"]
 		self.remove_team_btn = QPushButton(remove_team, self)
-		self.remove_team_btn.setGeometry(155, 370, 135, 20)
+		self.remove_team_btn.setGeometry(155, 360, 135, 30)
 		self.remove_team_btn.setStyleSheet(style.remove_team_btn)
 		self.remove_team_btn.clicked.connect(self.remove_team)
 

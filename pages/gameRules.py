@@ -22,7 +22,7 @@ class gameRuleForm(QLabel):
 
 		cancel_btn = lang[self.lang]["cancel"]
 		self.cancel_btn = QtWidgets.QPushButton(cancel_btn, self)
-		self.cancel_btn.setGeometry(10, 10, 50, 30)
+		self.cancel_btn.setGeometry(10, 10, 70, 30)
 		self.cancel_btn.setStyleSheet(style.cancel_btn)
 		self.cancel_btn.clicked.connect(self.deleteLater)
 
@@ -32,9 +32,7 @@ class gameRuleForm(QLabel):
 		self.save_btn.setStyleSheet(style.save_btn)
 		self.save_btn.clicked.connect(self.save)
 
-		
 
-		
 
 	def time_form(self):
 		time_value = self.parent_page.game_rule[0]
@@ -59,6 +57,7 @@ class gameRuleForm(QLabel):
 		self.time_check.setValue(time_value)
 		self.time_check.setSingleStep(2)
 		self.time_check.setGeometry(30, 140, 90, 240)
+		self.time_check.setStyleSheet(style.slider)
 		self.time_check.valueChanged.connect(self.change_spinbox_time)
 
 	def score_form(self):
@@ -84,6 +83,7 @@ class gameRuleForm(QLabel):
 		self.score_check.setValue(score_value)
 		self.score_check.setSingleStep(5)
 		self.score_check.setGeometry(180, 140, 90, 240)
+		self.score_check.setStyleSheet(style.slider)
 		self.score_check.valueChanged.connect(self.change_spinbox_score)
 
 	def change_spinbox_time(self):

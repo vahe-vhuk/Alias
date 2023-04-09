@@ -22,6 +22,17 @@ PageMaker including versions of
 Lorem Ipsum.
 """
 
+am_rules = """
+
+Ալյասը խաղ է, որը նախատեսված
+է թիմով խաղալու համար։ 
+"""
+
+ru_rules = """
+
+
+"""
+
 lang = {
 	"en" : {
 		"window" : "Alias",
@@ -83,7 +94,7 @@ lang = {
 		"existmsg" : "Слово уже сушествует",
 		"wrongmsg" : "Можно добавлять только \nрусские слова",
 		"succesmsg" : "Слово добавлено",
-		"rulestext" : en_rules
+		"rulestext" : ru_rules
 	},
 	"am" : {
 		"window" : "Ալյաս",
@@ -114,6 +125,6 @@ lang = {
 		"existmsg" : "Բառը արդեն ավելացված է",
 		"wrongmsg" : "Կարելի է ավելացնել միայն \nհայերեն բառեր",
 		"succesmsg" : "Բառը հաջողությամբ \nավելացված է",
-		"rulestext" : en_rules
+		"rulestext" : am_rules
 	}
 }

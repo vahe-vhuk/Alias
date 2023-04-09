@@ -1,13 +1,16 @@
 window = """
-	background: white; 
 	font-size: 18px;
 """
 
 exit_btn = """
 	QPushButton {
-		font-size: 10px;
+		background-color: rgba(12, 156, 156, 0.9);
+		border: 1px solid darkblue;
+		border-radius: 8px;
+		font-size: 13px;
+		color: rgb(91, 40, 158);
 	}
 	QPushButton:hover {
-		border: 2px solid green;
+		border: 4px double darkblue;
 	}
 """

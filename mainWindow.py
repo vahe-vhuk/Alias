@@ -1,4 +1,3 @@
-import sys
 from PyQt5.QtWidgets import QMainWindow, QApplication, QPushButton, QLabel
 from PyQt5.QtGui import QIcon
 from stylesheets import mainWindowStyle as style
@@ -52,12 +51,12 @@ class mainWindow(QMainWindow):
 		self.play_btn.clicked.connect(lambda:scoreWindow(self))
 
 		self.rules_btn = QPushButton(self)
-		self.rules_btn.setGeometry(10, 370, 135, 20)
+		self.rules_btn.setGeometry(10, 360, 135, 30)
 		self.rules_btn.setStyleSheet(style.rules_btn)
 		self.rules_btn.clicked.connect(lambda:rulesWindow(self))
 
 		self.add_word_btn = QPushButton(self)
-		self.add_word_btn.setGeometry(155, 370, 135, 20)
+		self.add_word_btn.setGeometry(155, 360, 135, 30)
 		self.add_word_btn.setStyleSheet(style.add_word_btn)
 		self.add_word_btn.clicked.connect(lambda:addWordWindow(self))
 

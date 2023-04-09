@@ -14,15 +14,15 @@ class addWordWindow(QtWidgets.QLabel):
 		self.setGeometry(0, 0, 300, 500)
 		self.setStyleSheet(style.window)
 
-		cancel_btn = lang[self.lang]["cancel"]
-		self.cancel_btn = QtWidgets.QPushButton(cancel_btn, self)
-		self.cancel_btn.setGeometry(10, 10, 50, 30)
-		self.cancel_btn.setStyleSheet(style.cancel_btn)
-		self.cancel_btn.clicked.connect(self.deleteLater)
+		exit_btn = lang[self.lang]["exit"]
+		self.exit_btn = QtWidgets.QPushButton(exit_btn, self)
+		self.exit_btn.setGeometry(10, 10, 70, 30)
+		self.exit_btn.setStyleSheet(style.exit_btn)
+		self.exit_btn.clicked.connect(self.deleteLater)
 
 		self.input = QtWidgets.QLineEdit(self)
 		self.input.setStyleSheet(style.word_input)
-		self.input.setGeometry(10, 350, 280, 20)
+		self.input.setGeometry(10, 350, 280, 30)
 
 		add = lang[self.lang]["add"]
 		self.add_btn = QtWidgets.QPushButton(add, self)
@@ -66,7 +66,7 @@ class messege(QtWidgets.QLabel):
 		self.show()
 
 	def initUi(self, msg):
-		self.setGeometry(10, 100, 280, 90)
+		self.setGeometry(10, 80, 280, 90)
 		self.setStyleSheet(style.msg)
 		self.setAlignment(QtCore.Qt.AlignCenter)
 		self.setText(msg)
