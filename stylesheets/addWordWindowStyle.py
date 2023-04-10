@@ -39,4 +39,5 @@ word_input = """
 	font-size: 20px;
 	border: 1px double lightblue;
 	border-radius: 5px;
+	color: white;
 """

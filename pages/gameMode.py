@@ -79,7 +79,7 @@ class gameModeForm(QtWidgets.QLabel):
 			return
 		self.team_list.pop()
 		count = self.form.count()
-		item = self.form.itemAt(2)
+		item = self.form.itemAt(count - 1).layout()
 		item.itemAt(0).widget().deleteLater()
 		item.itemAt(1).widget().deleteLater()
 		item.layout().deleteLater()

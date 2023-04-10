@@ -1,36 +1,77 @@
 en_rules = """
 
-Lorem Ipsum is simply dummy 
-text of the printing and 
-typesetting industry. Lorem 
-Ipsum has been the industry's 
-standard dummy text ever since 
-the 1500s, when an unknown 
-printer took a galley of type 
-and scrambled it to make a type 
-specimen book. It has survived 
-not only five centuries, but 
-also the leap into electronic 
-typesetting, remaining 
-essentially unchanged. It was 
-popularised in the 1960s with 
-the release of Letraset sheets 
-containing Lorem Ipsum passages, 
-and more recently with desktop 
-publishing software like Aldus 
-PageMaker including versions of 
-Lorem Ipsum.
+Alias is a team game.
+On the "Game Mode" page we can add 
+or reduce  the number of playing 
+groups (2-4 groups).
+On the "Settings" page, you can 
+select the duration of one round
+(20-180 seconds), as well as  the 
+number of points required to win 
+the game (20-400 units).
+On the "Add word" page you can add
+words that are not listed in the 
+recommended words. (The words must 
+contain only English letters)
+During the game, for every guessed 
+word the team gets one point, if 
+the some of the given words are not 
+guessed and the player presses 
+"Next", the team loses a point for 
+every unguessed word. The playing 
+team does not lose points if all 
+of the sugested 5 words are not 
+guessed or if the time is up.
 """
 
 am_rules = """
 
-Ալյասը խաղ է, որը նախատեսված
-է թիմով խաղալու համար։ 
+Ալյասը նախատեսված է թիմով խաղալու 
+համար։ "Խաղի ռեժիմ" էջում կարելի 
+է ավելացնել կամ պակասեցնել խաղացող 
+խմբերի քանակը (2-4 խումբ)։
+"Կարգավորումներ" էջում կարելի է նշել 
+մի խմբին տրվող մեկ խաղի ժամանակը 
+(20-180 վայրկյան)
+և հաղթական միավորների քանակը 
+(20-400 միավոր)
+"Ավելացնել բառ" էջում կարելի է 
+ավելցնել բառեր որոնք չկան առաջարկվող 
+բառերի ցանկում։ (Բառերը պետք է 
+պարունակեն միայն հայերեն տառեր)
+Խաղի ընթացքում ամեն ճիշտ գուշակած 
+բառի դիմաց թիմին տրվում է մեկ միավոր, 
+եթե առաջարկվող բառերից մի քանի բառ 
+չի գուշակվել և սեխմվել է "Հաջորդ" 
+կոճակը թիմի միավորներից հանվում է 
+չգուշակված բառերի քանակով միավոր; 
+Միավոր չի հանվում թիմից եթե չեն 
+գուշակվել առաջարկվող 5 բառերից ոչ 
+մեկը կամ լռացել է ժամանակը;
 """
 
 ru_rules = """
 
-
+Алиас предназначен для командной игры.
+На странице "Игровой режим" можно 
+увеличить или уменьшить количество 
+игровых групп (2-4 группы).
+На странице «Настройки» можно указать
+время на игру, отведенное группе
+(20-180 секунд) и количество победных 
+очков (20-400 баллов)
+На странице "Добавить слово" можно 
+добавить слова, которых нет в списке 
+рекомендуемых слов.(Слова должны 
+содержать только русские буквы)
+За каждое правильно угаданное слово 
+во время игры команде дается одно очко, 
+если некоторые из предложенных слов не 
+были угаданы и нажато кнопку "Далее" 
+для команды снимаются баллы за каждые 
+неугаданные слова. Очки с команды не 
+снимаются если ни одно из 5 предложенных 
+слов не было угадано или время истекло.
 """
 
 lang = {
@@ -72,26 +113,26 @@ lang = {
 		"play" : "Играть",
 		"rules" : "Провила",
 		"addword" : "Добавить слово",
-		"addteam" : "Добавить групу",
-		"removeteam" : "Удалить групу",
+		"addteam" : "Добавить группу",
+		"removeteam" : "Удалить группу",
 		"cancel" : "Отменить",
 		"save" : "Сохранить",
-		"team" : "Група",
+		"team" : "Группа",
 		"selecttime" : "Игровая время",
 		"selectscore" : "Игровой баланс",
-		"exit" : "Выод",
+		"exit" : "Выход",
 		"start" : "Начать",
-		"next" : "Следуший",
+		"next" : "Следущий",
 		"raund" : "Раунд",
 		"s" : "с",
-		"coin" : "очков",
+		"coin" : "Очков",
 		"time" : "Время",
 		"victory" : "ПОБЕДА",
 		"congrat" : "ПОЗДРАВЛЯЕМ",
 		"score" : "ОЧКИ",
 		"add" : "Добавить",
 		"letters" : "абвгдеёжзийклмнопрстуфхцчшщъыьзюя",
-		"existmsg" : "Слово уже сушествует",
+		"existmsg" : "Слово уже существует",
 		"wrongmsg" : "Можно добавлять только \nрусские слова",
 		"succesmsg" : "Слово добавлено",
 		"rulestext" : ru_rules
